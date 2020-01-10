@@ -10,21 +10,23 @@ namespace RobotsVsDinos
     {
         List<Robot> Robots = new List<Robot>();
 
+        //member method (FLEET CAN DO)
         public void CreateFleet()
         {
             //instantiate three objects and then add them to the list
 
-            Robot FirstRobot = new Robot("Mandark");
-            Robot SecondRobot = new Robot("DeeDee");
-            Robot ThirdRobot = new Robot("Dexter");
+            Robot Mandark = new Robot("Mandark", 10, 10);
+            Robot DeeDee = new Robot("DeeDee", 10, 8);
+            Robot Dexter = new Robot("Dexter", 10, 6);
 
-            Robots.Add(FirstRobot);
-            Robots.Add(SecondRobot);
-            Robots.Add(ThirdRobot);
+            Robots.Add(Mandark);
+            Robots.Add(DeeDee);
+            Robots.Add(Dexter);
 
-            foreach (Robot Robot in Robots);
+            foreach (Robot Robot in Robots)
             {
-                Console.WriteLine(Robot);
+                Console.WriteLine(Robots);
+                Console.ReadLine();
             }
         }
 

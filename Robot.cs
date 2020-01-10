@@ -14,15 +14,14 @@ namespace RobotsVsDinos
         public int HealthLevel;
         public int PowerLevel;
         public Weapon Weapon;
-        
+
 
         //contructor (ROBOT DEFAULT Settings)
-        public Robot(string RobotName, int HealthLevel, )
+        public Robot(string RobotName, int HealthLevel, int PowerLevel)
         {
             this.RobotName = RobotName;
-            this.HealthLevel = HealthLevel;
-
-
+            this.HealthLevel =  HealthLevel;
+            this.PowerLevel = PowerLevel;
             Weapon = new Weapon();
         }
 
@@ -30,20 +29,7 @@ namespace RobotsVsDinos
 
         public void AttackDino()
         {
-
-        }
-
-        public void Mandark()
-        {
-
-        }
-        public void DeeDee()
-        {
-
-        }
-        public void Dexter()
-        {
-
+           
         }
 
     }

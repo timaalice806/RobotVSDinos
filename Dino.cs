@@ -18,10 +18,10 @@ namespace RobotsVsDinos
         //contructor (DINO DEFAULT Settings)
         public Dino(string DinoType, int HealthLevel, int EnergyLevel, int AttackPower)
         {
-            DinoType = "LongNeck";
-            HealthLevel = 100;
-            EnergyLevel = 100;
-            AttackPower = 10;
+            this.DinoType = DinoType;
+            this.HealthLevel = HealthLevel;
+            this.EnergyLevel = EnergyLevel;
+            this.AttackPower = AttackPower;
         }
 
         //member methods (DINOS CAN DO)
