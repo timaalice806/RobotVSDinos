@@ -11,9 +11,9 @@ namespace RobotsVsDinos
         //member variables (DINOS HAVE A)
 
         public string DinoType;
-        public int HealthLevel;
-        public int EnergyLevel;
-        public int AttackPower;
+        public int HealthLevel = 10;
+        public int EnergyLevel = 10;
+        public int AttackPower = 8;
 
         //contructor (DINO DEFAULT Settings)
         public Dino(string DinoType, int HealthLevel, int EnergyLevel, int AttackPower)
@@ -26,9 +26,9 @@ namespace RobotsVsDinos
 
         //member methods (DINOS CAN DO)
 
-        public void AttackRobot()
+        public void AttackRobot(Robot robo)
         {
-
+            //robo.RobotName
         }
     }
 }
